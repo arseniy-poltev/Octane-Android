@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    tools:context="com.octane.app.activity.MainActivity" >
+
+
+
+    <TextView
+        android:id="@+id/info"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigate"/>
+    <LinearLayout
+        android:id="@+id/inputpane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/sendP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal"/>
+        <Button
+            android:id="@+id/sendP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sport"/>
+        <Button
+            android:id="@+id/sendP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Super sport"/>
+        <Button
+            android:id="@+id/sendP4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valet parking"/>
+        <Button
+            android:id="@+id/sendP5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thief protect"/>
+        <Button
+            android:id="@+id/sendP6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special"/>
+        <Button
+            android:id="@+id/get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/status"
+        android:textSize="28sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:text="Scan"/>
+
+    <ListView
+        android:id="@+id/pairedlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

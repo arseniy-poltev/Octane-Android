@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/ic_normal</item>
+        <item>@drawable/ic_power</item>
+        <item>@drawable/ic_speed</item>
+        <item>@drawable/ic_valet</item>
+        <item>@drawable/ic_antitheft</item>
+        <item>@drawable/ic_item1</item>
+    </array>
+    <array name="sel_icons">
+        <item>@drawable/ic_normal_sel</item>
+        <item>@drawable/ic_power_sel</item>
+        <item>@drawable/ic_speed_sel</item>
+        <item>@drawable/ic_valet_sel</item>
+        <item>@drawable/ic_antitheft_sel</item>
+        <item>@drawable/ic_other_sel</item>
+    </array>
+
+    <array name="colors">
+        <item>@drawable/gradient</item>
+        <item>#ff292c31</item>
+        <item>#ff292c31</item>
+        <item>#ff292c31</item>
+        <item>#ff292c31</item>
+        <item>#ff292c31</item>
+    </array>
+
+    <array name="titles">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </array>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_above="@id/edtPIN"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Input your PIN Code"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtPIN"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_pin"
+            android:textColorHint="#70ffffff"
+            android:textColor="@color/white"
+            android:background="@color/field1"
+            android:layout_margin="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="4"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/btnChangePIN"
+            android:layout_below="@id/edtPIN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/img_btn_login"
+            android:gravity="center"
+            android:text="@string/txt_change"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

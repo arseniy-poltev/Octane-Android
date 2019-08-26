@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_menu_manage"
+        android:iconTint="@color/white"
+        android:title="@string/title_profile"
+         />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_setting" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/nav_item_help" />
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:orientation="vertical"
+    tools:context="com.octane.app.activity.AppActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="2dp"
+        android:layout_weight="1.3">
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:text="Normal"/>
+        <TextView
+            android:id="@+id/profDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileName"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="Puts your vehicle into Normal Mode"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+        <com.octane.app.Component.CircularNavigationView
+            android:id="@+id/circular_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:center_color="@color/field1"
+            app:outer_image="@drawable/img_boarder"
+            app:center_icon="@drawable/img_dial"
+            app:inner_radius="@dimen/inner_radius"
+            app:item_colors="@array/colors"
+            app:item_count="6"
+            app:item_icons="@array/icons"
+            app:item_sel_icons="@array/sel_icons"
+            app:item_titles="@array/titles"
+            app:outer_radius="@dimen/outer_radius"
+            app:title_color="@android:color/white"
+            app:title_padding="@dimen/title_padding"
+            app:title_size="@dimen/title_size" />
+    </RelativeLayout>
+
+</LinearLayout>
